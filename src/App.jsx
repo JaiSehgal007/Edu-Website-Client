@@ -180,7 +180,7 @@ const ChatInterface = () => {
   
       const fetchAnswer = async () => {
         try {
-          const response = await fetch('http://localhost:8000/api/questions/', {
+          const response = await fetch('https://edubot-backend.onrender.com/api/questions/', {
             method: 'PUT',
             headers: {
               'Content-Type': 'application/json',
@@ -233,7 +233,7 @@ const ChatInterface = () => {
 
       const questionId = QuestionId; 
       try {
-        const response = await fetch('http://localhost:8000/api/feedback/', {
+        const response = await fetch('https://edubot-backend.onrender.com/api/feedback/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
